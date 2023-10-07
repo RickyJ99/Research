@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.5)  7 OCT 2023 14:48
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.5)  7 OCT 2023 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/riccardodalcero/Desktop/Research/latex/randomization.tex
-(/Users/riccardodalcero/Desktop/Research/latex/randomization.tex
+**/Users/riccardodalcero/Library/CloudStorage/OneDrive-UniversitaCattolicaSacroCuore-ICATT/Materials/Research/latex/randomization.tex
+(/Users/riccardodalcero/Library/CloudStorage/OneDrive-UniversitaCattolicaSacroCuore-ICATT/Materials/Research/latex/randomization.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -123,77 +123,116 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count271
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box53
+)
+\tc@llx=\dimen165
+\tc@lly=\dimen166
+\tc@urx=\dimen167
+\tc@ury=\dimen168
+Package trimclip Info: Using driver 'tc-xetex.def'.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen169
+\adjbox@Height=\dimen170
+\adjbox@Depth=\dimen171
+\adjbox@Totalheight=\dimen172
+\adjbox@pwidth=\dimen173
+\adjbox@pheight=\dimen174
+\adjbox@pdepth=\dimen175
+\adjbox@ptotalheight=\dimen176
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count272
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box54
+\sift@deathcycles=\count273
+\@vwid@loff=\dimen177
+\@vwid@roff=\dimen178
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
-\g__graphics_track_int=\count271
-\l__pdf_internal_box=\box53
-\g__pdf_backend_object_int=\count272
-\g__pdf_backend_annotation_int=\count273
-\g__pdf_backend_link_int=\count274
+\g__graphics_track_int=\count274
+\l__pdf_internal_box=\box55
+\g__pdf_backend_object_int=\count275
+\g__pdf_backend_annotation_int=\count276
+\g__pdf_backend_link_int=\count277
 ) (./randomization.aux)
 \openout1 = `randomization.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 12.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
- (./traditiona_rand_trad.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
 
  []
 
-(./probit_trad.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: histogram_eta_trad.png Graphic file (type bmp)
 <histogram_eta_trad.png>
- [1
+[1
 
 ]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: box_plot_eta_trad.png Graphic file (type bmp)
 <box_plot_eta_trad.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: histogram_peso_trad.png Graphic file (type bmp)
 <histogram_peso_trad.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: box_plot_peso_trad.png Graphic file (type bmp)
 <box_plot_peso_trad.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
-[2]
+[4]
 File: histogram_eta_ntrad.png Graphic file (type bmp)
 <histogram_eta_ntrad.png>
-
-Overfull \hbox (15.55405pt too wide) in paragraph at lines 137--138
- [][] 
- []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -213,14 +252,14 @@ File: box_plot_peso_ntrad.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3] [4] [5] [6] [7] (./randomization.aux) ) 
+[5] [6] [7] (./randomization.aux) ) 
 Here is how much of TeX's memory you used:
- 1824 strings out of 476684
- 30352 string characters out of 5804056
- 1856018 words of memory out of 5000000
- 22073 multiletter control sequences out of 15000+600000
- 516199 words of font info for 52 fonts, out of 8000000 for 9000
+ 2947 strings out of 476684
+ 50889 string characters out of 5804056
+ 1854018 words of memory out of 5000000
+ 23167 multiletter control sequences out of 15000+600000
+ 516207 words of font info for 53 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 55i,14n,62p,288b,301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,14n,62p,356b,290s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on randomization.xdv (7 pages, 48936 bytes).
+Output written on randomization.xdv (7 pages, 65084 bytes).

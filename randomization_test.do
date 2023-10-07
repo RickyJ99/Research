@@ -1,6 +1,6 @@
 clear
 // Randomization test
-log using "/Users/riccardodalcero/Desktop/Research/log.smcl", replace
+//log using "/Users/riccardodalcero/Desktop/Research/log.smcl", replace
 // Importing dataset
 import excel using "dati gruppo.xlsx", firstrow clear 
 keep if Tradizionale==1
@@ -51,17 +51,17 @@ matrix list results
 esttab matrix(results) using "./latex/traditiona_rand_trad.tex", replace
 
 // Create a histogram of età by treatment group
-histogram età, by(group, title("Distribution of età by Treatment Group"))
+histogram età, by(group, title("Distribution of age by Treatment Group"))
 graph export "./latex/histogram_eta_trad.png", replace
 
 // Create a box plot of età by treatment group
-graph box età, over(group) title("Box Plot of età by Treatment Group")
+graph box età, over(group) title("Box Plot of age by Treatment Group")
 graph export "./latex/box_plot_eta_trad.png", replace
 
 // Create similar plots for the variable peso
-histogram peso, by(group, title("Distribution of peso by Treatment Group"))
+histogram peso, by(group, title("Distribution of weight by Treatment Group"))
 graph export "./latex/histogram_peso_trad.png", replace
-graph box peso, over(group) title("Box Plot of peso by Treatment Group")
+graph box peso, over(group) title("Box Plot of weight by Treatment Group")
 graph export "./latex/box_plot_peso_trad.png", replace
 est clear
 // Probit regression to test if characteristics predict treatment

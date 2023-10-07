@@ -3,23 +3,32 @@
 \usepackage{booktabs}  % For better table formatting
 \usepackage{amsmath}
 \usepackage{booktabs}
+\usepackage[export]{adjustbox}
 
 % Define the \sym command for significance levels
 \newcommand{\sym}[1]{%
   \ifmmode^{#1}\else\(^{#1}\)\fi%
 }
 \begin{document}
-
 \title{Randomization assessment}
-\author{Riccaro Dal Cero}
-\date{\today}
+\author{Riccardo D.C.}
+\date{21 September 2023}
 \maketitle
 \section{Traditional method}
 \begin{table}[htbp]
     \centering
     \caption{Differences in means across Maropitant and Metadone}
     \begin{tabular}{ccc}
-    \input{traditiona_rand_trad.tex}
+        \begin{tabular}{l*{3}{c}}
+            \hline\hline
+                        &     &            &            \\
+                        &Metadone(control)&Maropitant(treatment)&     p-value\\
+            \hline
+            Age         &        15.9&       16.95&    .4321982\\
+            Weight      &       19.95&       20.85&    .2792915\\
+            \hline\hline
+        \end{tabular}
+            
     \end{tabular}
 \end{table}
 The table displays the means of two key variables, 'Age' and 'Weight,' stratified by treatment status. The p-values in
@@ -32,7 +41,35 @@ randomization process. In the context of this experiment, larger p-values sugges
 significant differences in these key characteristics between the treatment and control groups. This reinforces our
 confidence in the randomization process, indicating that it effectively balanced these variables across the two groups,
 thereby enhancing the validity of our experimental findings.
-\input{probit_trad.tex}
+\begin{table}[!h]\centering
+    \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+    \caption{Regression probit to check randomization}
+    \begin{tabular}{l*{1}{c}}
+    \toprule
+     
+                        &\multicolumn{1}{c}{Maropitant}\\
+    \midrule
+        &                     \\
+    Age                 &       0.045         \\
+                        &     (0.050)         \\
+    \addlinespace
+    Weight                &       0.094         \\
+                        &     (0.080)         \\
+    \addlinespace
+    Constant            &      -2.662         \\
+                        &     (1.915)         \\
+    \midrule
+    Observations        &          40         \\
+    LR chi2(2)          &      2.07             \\
+    Prob > chi2         &   0.3549              \\
+
+    \bottomrule
+    \multicolumn{2}{l}{\footnotesize Standard errors in parentheses}\\
+    \multicolumn{2}{l}{\footnotesize  }\\
+    \multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+    \end{tabular}
+\end{table}
+    
 The results of the probit regression provide important evidence supporting the success of our randomization process. The
 coefficient estimates for 'Age' and 'Weight,' which represent potential confounding variables, do not show statistically
 significant relationships with the treatment variable 'Maropitant.' Additionally, the likelihood ratio (LR) chi-squared
@@ -41,34 +78,38 @@ covariates collectively do not significantly predict the treatment assignment. T
 process effectively balanced these characteristics between the treatment and control groups, reinforcing our confidence
 in the experiment's validity. 
 
-
-
-\section{Plots}
-
-\begin{figure}[h]
+\subsection{Plots}
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.30]{histogram_eta_trad.png}
 \caption{Histogram of age by Treatment Group}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.30]{box_plot_eta_trad.png}
 \caption{Box Plot of age by Treatment Group}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.30]{histogram_peso_trad.png}
 \caption{Histogram of weight by Treatment Group}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[scale=0.30]{box_plot_peso_trad.png}
 \caption{Box Plot of weight by Treatment Group}
 \end{figure}
 
+Investigating the randomization success of our experiment, we turn our attention to the provided plots. These visual
+representations showcase the distribution of key variables among the treatment and control groups. Notably, the plots
+reveal a striking similarity in the distribution of variables between the two groups, with substantial overlap observed.
+This alignment suggests that the randomization process effectively balanced the covariates, ensuring that both groups
+exhibit comparable characteristics. The absence of pronounced differences between the treatment and control groups in
+these plots reinforces our confidence in the validity of the randomization procedure, strengthening the foundation upon
+which our experimental conclusions are built. 
 \section{Thunder method}
 \begin{table}[htbp]
     \centering
@@ -98,7 +139,7 @@ results.
     \caption{Probit Regression to Check Randomization}
     \begin{tabular}{l*{1}{c}}
         \toprule
-                            &\multicolumn{1}{c}{(1)}\\
+                            &\\
                             &\multicolumn{1}{c}{Maropitant}\\
         \midrule
                 &                     \\
@@ -112,6 +153,8 @@ results.
                             & (1.836)             \\
         \midrule
         Observations        & 40                  \\
+        LR chi2(2)          &      2.27             \\
+        Prob > chi2         &   0.3220              \\
         \bottomrule
         \multicolumn{2}{l}{\footnotesize Standard errors in parentheses}\\
         \multicolumn{2}{l}{\footnotesize  }\\
@@ -130,11 +173,11 @@ reinforcing our confidence in the experiment's validity.
 
 
 
-\section{Plots}
+\subsection{Plots}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.39]{histogram_eta_ntrad.png}
+\includegraphics[scale=0.30]{histogram_eta_ntrad.png}
 \caption{Histogram of age by Treatment Group}
 \end{figure}
 
@@ -155,4 +198,11 @@ reinforcing our confidence in the experiment's validity.
 \includegraphics[scale=0.30]{box_plot_peso_ntrad.png}
 \caption{Box Plot of age by Treatment Group}
 \end{figure}
+These graphical representations offer valuable insights into the distribution of key variables between the control
+(Metadone) and treatment (Maropitant) groups. Remarkably, the plots depict a high degree of similarity in the
+distribution patterns of these variables across both groups. The substantial overlap observed in the plots suggests that
+the randomization procedure has achieved a successful balance of covariates between the treatment and control groups.
+This harmonious alignment in the plots serves as compelling evidence of the randomization's success, enhancing the
+credibility of our experimental findings. It indicates that any observed effects are likely attributable to the
+treatment rather than confounding variables, reinforcing the robustness of our conclusions. 
 \end{document}
