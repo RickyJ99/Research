@@ -1,0 +1,158 @@
+\documentclass{article}
+\usepackage{graphicx}  % To include images
+\usepackage{booktabs}  % For better table formatting
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+% Define the \sym command for significance levels
+\newcommand{\sym}[1]{%
+  \ifmmode^{#1}\else\(^{#1}\)\fi%
+}
+\begin{document}
+
+\title{Randomization assessment}
+\author{Riccaro Dal Cero}
+\date{\today}
+\maketitle
+\section{Traditional method}
+\begin{table}[htbp]
+    \centering
+    \caption{Differences in means across Maropitant and Metadone}
+    \begin{tabular}{ccc}
+    \input{traditiona_rand_trad.tex}
+    \end{tabular}
+\end{table}
+The table displays the means of two key variables, 'Age' and 'Weight,' stratified by treatment status. The p-values in
+the last column correspond to the results of t-tests comparing the means of these variables between the treatment and
+control groups. \\
+\par
+Notably, the p-values for both 'Age' and 'Weight' are relatively large, with 'Age' yielding a p-value of approximately
+0.4322 and 'Weight' yielding a p-value of around 0.2793. These large p-values are indicative of the success of the
+randomization process. In the context of this experiment, larger p-values suggest that there are no statistically
+significant differences in these key characteristics between the treatment and control groups. This reinforces our
+confidence in the randomization process, indicating that it effectively balanced these variables across the two groups,
+thereby enhancing the validity of our experimental findings.
+\input{probit_trad.tex}
+The results of the probit regression provide important evidence supporting the success of our randomization process. The
+coefficient estimates for 'Age' and 'Weight,' which represent potential confounding variables, do not show statistically
+significant relationships with the treatment variable 'Maropitant.' Additionally, the likelihood ratio (LR) chi-squared
+test, which assesses the overall significance of the covariates, yields a p-value of 0.3549, indicating that these
+covariates collectively do not significantly predict the treatment assignment. This suggests that the randomization
+process effectively balanced these characteristics between the treatment and control groups, reinforcing our confidence
+in the experiment's validity. 
+
+
+
+\section{Plots}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{histogram_eta_trad.png}
+\caption{Histogram of age by Treatment Group}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{box_plot_eta_trad.png}
+\caption{Box Plot of age by Treatment Group}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{histogram_peso_trad.png}
+\caption{Histogram of weight by Treatment Group}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{box_plot_peso_trad.png}
+\caption{Box Plot of weight by Treatment Group}
+\end{figure}
+
+\section{Thunder method}
+\begin{table}[htbp]
+    \centering
+    \caption{Mean Values by Treatment Group (Thunder Method)}
+    \begin{tabular}{l*{3}{c}}
+    \hline\hline
+                & Metadone (control) & Maropitant (treatment) & p-value \\
+    \hline
+    Age         & 15.05 & 16.00 & 0.4516 \\
+    Weight      & 19.00 & 20.00 & 0.2429 \\
+    \hline\hline
+    \end{tabular}
+\end{table}
+The table presents the means of two key variables, 'Age' and 'Weight,' categorized by treatment group. The p-values in
+the last column represent the outcomes of t-tests that compare the means of these variables between the treatment and
+control groups. \\
+\par
+Notably, the p-values for both 'Age' and 'Weight' are relatively large, with 'Age' yielding a p-value of approximately
+0.4516 and 'Weight' yielding a p-value of approximately 0.2429. These sizable p-values serve as strong evidence in favor
+of the successful implementation of the randomization process. Within the context of this experiment, larger p-values
+suggest that there are no statistically significant disparities in these crucial characteristics between the treatment
+and control groups. This reaffirms our confidence in the effectiveness of the randomization process, as it has
+effectively balanced these variables between the two groups, thereby bolstering the credibility of our experimental
+results. 
+\begin{table}[htbp]
+    \centering
+    \caption{Probit Regression to Check Randomization}
+    \begin{tabular}{l*{1}{c}}
+        \toprule
+                            &\multicolumn{1}{c}{(1)}\\
+                            &\multicolumn{1}{c}{Maropitant}\\
+        \midrule
+                &                     \\
+        Age                 & 0.048               \\
+                            & (0.053)             \\
+        \addlinespace
+        Weight              & 0.100               \\
+                            & (0.078)             \\
+        \addlinespace
+        Constant            & -2.682              \\
+                            & (1.836)             \\
+        \midrule
+        Observations        & 40                  \\
+        \bottomrule
+        \multicolumn{2}{l}{\footnotesize Standard errors in parentheses}\\
+        \multicolumn{2}{l}{\footnotesize  }\\
+        \multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+    \end{tabular}
+\end{table}
+    
+The results of the probit regression provide important evidence supporting the success of our randomization process.
+The coefficient estimates for 'Age' and 'Weight,' which represent potential confounding variables, do not show
+statistically significant relationships with the treatment variable 'Maropitant.' Additionally, the likelihood ratio
+(LR) chi-squared test, which assesses the overall significance of the covariates, yields a p-value of 0.3549,
+indicating that these covariates collectively do not significantly predict the treatment assignment. This suggests
+that the randomization process effectively balanced these characteristics between the treatment and control groups,
+reinforcing our confidence in the experiment's validity.
+    
+
+
+
+\section{Plots}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.39]{histogram_eta_ntrad.png}
+\caption{Histogram of age by Treatment Group}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{box_plot_eta_ntrad.png}
+\caption{Box Plot of age by Treatment Group}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{histogram_peso_ntrad.png}
+\caption{Histogram of age by Treatment Group}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.30]{box_plot_peso_ntrad.png}
+\caption{Box Plot of age by Treatment Group}
+\end{figure}
+\end{document}

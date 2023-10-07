@@ -1,0 +1,262 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/riccardodalcero/Desktop/Research/log1.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 7 Oct 2023, 14:28:23
+{txt}
+{com}. // Importing dataset
+. import excel using "dati gruppo.xlsx", firstrow clear 
+{res}{text}(91 vars, 80 obs)
+
+{com}. keep if Tradizionale==0
+{txt}(40 observations deleted)
+
+{com}. // Create a categorical grouping variable named "group" with labels
+. gen group = .
+{txt}(40 missing values generated)
+
+{com}. label define group 0 "Control" 1 "Treatment"
+{txt}
+{com}. label values group group
+{txt}
+{com}. replace group = 1 if Maropitant == 1 // Treatment
+{txt}(20 real changes made)
+
+{com}. replace group = 0 if Maropitant == 0 // Control
+{txt}(20 real changes made)
+
+{com}. 
+. // Generate summary statistics for età and peso by Maropitant group
+. tabstat età peso, by(group) statistics(mean) columns(statistics)
+
+{txt}Summary for variables: età peso
+Group variable: group 
+
+{ralign 9:group} {...}
+{c |}      Mean
+{hline 10}{c +}{hline 10}
+{ralign 9:Control} {...}
+{c |}{...}
+ {res}    15.05
+{space 9} {...}
+{txt}{c |}{...}
+ {res}       19
+{txt}{hline 10}{c +}{hline 10}
+{ralign 9:Treatment} {...}
+{c |}{...}
+ {res}       16
+{space 9} {...}
+{txt}{c |}{...}
+ {res}       20
+{txt}{hline 10}{c +}{hline 10}
+{ralign 9:Total} {...}
+{c |}{...}
+ {res}   15.525
+{space 9} {...}
+{txt}{c |}{...}
+ {res}     19.5
+{txt}{hline 10}{c BT}{hline 10}
+
+{com}. 
+. // Generate a t-test for the difference in means between the two groups
+. ttest età, by(group)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+ Control {c |}{res}{col 12}     20{col 22}    15.05{col 34} .8061442{col 46} 3.605186{col 58} 13.36272{col 70} 16.73728
+{txt}Treatmen {c |}{res}{col 12}     20{col 22}       16{col 34}  .954215{col 46} 4.267379{col 58}  14.0028{col 70}  17.9972
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     40{col 22}   15.525{col 34} .6211935{col 46} 3.928773{col 58} 14.26852{col 70} 16.78148
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.95{col 34} 1.249158{col 58}-3.478787{col 70} 1.578787
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}Control{txt}) - mean({res}Treatmen{txt})                         t = {res} -0.7605
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      38
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.2258         {txt}Pr(|T| > |t|) = {res}0.4516          {txt}Pr(T > t) = {res}0.7742
+{txt}
+{com}. 
+. // Store the p-value from the t-test in a local macro
+. local p_value_età = r(p)
+{txt}
+{com}. 
+. // Generate a t-test for the difference in means between the two groups
+. ttest peso, by(group)
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. err.{col 47}Std. dev.{col 59}[95% conf. interval]
+{hline 9}{c +}{hline 68}
+ Control {c |}{res}{col 12}     20{col 22}       19{col 34} .5026247{col 46} 2.247806{col 58} 17.94799{col 70} 20.05201
+{txt}Treatmen {c |}{res}{col 12}     20{col 22}       20{col 34} .6766792{col 46} 3.026201{col 58} 18.58369{col 70} 21.41631
+{txt}{hline 9}{c +}{hline 68}
+Combined {c |}{res}{col 12}     40{col 22}     19.5{col 34} .4236593{col 46} 2.679457{col 58} 18.64307{col 70} 20.35693
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}       -1{col 34} .8429272{col 58}-2.706417{col 70}  .706417
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}Control{txt}) - mean({res}Treatmen{txt})                         t = {res} -1.1863
+{txt}H0: diff = 0                                     Degrees of freedom = {res}      38
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.1214         {txt}Pr(|T| > |t|) = {res}0.2429          {txt}Pr(T > t) = {res}0.8786
+{txt}
+{com}. 
+. // Store the p-value from the t-test in a local macro
+. local p_value_peso = r(p)
+{txt}
+{com}. 
+. // Calculate means using summarize and store them in local macros
+. summarize età if group == 0, meanonly
+{txt}
+{com}. local Mean_età_0 = r(mean)
+{txt}
+{com}. 
+. summarize età if group == 1, meanonly
+{txt}
+{com}. local Mean_età_1 = r(mean)
+{txt}
+{com}. 
+. summarize peso if group == 0, meanonly
+{txt}
+{com}. local Mean_peso_0 = r(mean)
+{txt}
+{com}. 
+. summarize peso if group == 1, meanonly
+{txt}
+{com}. local Mean_peso_1 = r(mean)
+{txt}
+{com}. 
+. // Create a matrix to store the results
+. matrix results = (`Mean_età_0', `Mean_età_1', `p_value_età'\ `Mean_peso_0' , `Mean_peso_1' , `p_value_peso')
+{txt}
+{com}. 
+. // Assign labels to the matrix columns
+. matrix colnames results = Metadone(control) Maropitant(treatment)  p-value 
+{txt}
+{com}. matrix rownames results = Age weigth
+{txt}
+{com}. est clear
+{txt}
+{com}. // Print the table
+. matrix list results
+{res}
+{txt}results[2,3]
+          Metadone(  Maropitant(              
+           control)   treatment)      p-value
+   Age {res}       15.05           16     .4516416
+{txt}weigth {res}          19           20    .24285185
+{reset}
+{com}. esttab matrix(results) using "./latex/traditiona_rand_ntrad.tex", replace
+{res}{txt}{p 0 4 2}
+(file {bf}
+./latex/traditiona_rand_ntrad.tex{rm}
+not found)
+{p_end}
+(output written to {browse  `"./latex/traditiona_rand_ntrad.tex"'})
+
+{com}. 
+. // Create a histogram of età by treatment group
+. histogram età, by(group, title("Distribution of età by Treatment Group"))
+{res}{txt}
+{com}. graph export "./latex/histogram_eta_ntrad.png", replace
+{txt}{p 0 4 2}
+file {bf}
+/Users/riccardodalcero/Desktop/Research/latex/histogram_eta_ntrad.png{rm}
+saved as
+PNG
+format
+{p_end}
+
+{com}. 
+. // Create a box plot of età by treatment group
+. graph box età, over(group) title("Box Plot of età by Treatment Group")
+{res}{txt}
+{com}. graph export "./latex/box_plot_eta_ntrad.png", replace
+{txt}{p 0 4 2}
+file {bf}
+/Users/riccardodalcero/Desktop/Research/latex/box_plot_eta_ntrad.png{rm}
+saved as
+PNG
+format
+{p_end}
+
+{com}. 
+. // Create similar plots for the variable peso
+. histogram peso, by(group, title("Distribution of peso by Treatment Group"))
+{res}{txt}
+{com}. graph export "./latex/histogram_peso_ntrad.png", replace
+{txt}{p 0 4 2}
+file {bf}
+/Users/riccardodalcero/Desktop/Research/latex/histogram_peso_ntrad.png{rm}
+saved as
+PNG
+format
+{p_end}
+
+{com}. graph box peso, over(group) title("Box Plot of peso by Treatment Group")
+{res}{txt}
+{com}. graph export "./latex/box_plot_peso_ntrad.png", replace
+{txt}{p 0 4 2}
+file {bf}
+/Users/riccardodalcero/Desktop/Research/latex/box_plot_peso_ntrad.png{rm}
+saved as
+PNG
+format
+{p_end}
+
+{com}. est clear
+{txt}
+{com}. // Probit regression to test if characteristics predict treatment
+. probit Maropitant età peso
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-27.725887}  
+Iteration 1:{space 3}log likelihood = {res:-26.596024}  
+Iteration 2:{space 3}log likelihood = {res:-26.592821}  
+Iteration 3:{space 3}log likelihood = {res:-26.592821}  
+{res}
+{txt}{col 1}Probit regression{col 57}{lalign 13:Number of obs}{col 70} = {res}{ralign 6:40}
+{txt}{col 57}{lalign 13:LR chi2({res:2})}{col 70} = {res}{ralign 6:2.27}
+{txt}{col 57}{lalign 13:Prob > chi2}{col 70} = {res}{ralign 6:0.3220}
+{txt}{col 1}{lalign 14:Log likelihood}{col 15} = {res}{ralign 10:-26.592821}{txt}{col 57}{lalign 13:Pseudo R2}{col 70} = {res}{ralign 6:0.0409}
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  Maropitant{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      z{col 46}   P>|z|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}età {c |}{col 14}{res}{space 2} .0476218{col 26}{space 2} .0531976{col 37}{space 1}    0.90{col 46}{space 3}0.371{col 54}{space 4}-.0566435{col 67}{space 3} .1518871
+{txt}{space 8}peso {c |}{col 14}{res}{space 2} .0997055{col 26}{space 2}  .078355{col 37}{space 1}    1.27{col 46}{space 3}0.203{col 54}{space 4}-.0538675{col 67}{space 3} .2532784
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-2.682056{col 26}{space 2} 1.836149{col 37}{space 1}   -1.46{col 46}{space 3}0.144{col 54}{space 4}-6.280842{col 67}{space 3} .9167292
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+. 
+. // Save regression results in LaTeX format
+. esttab using "./latex/probit_ntrad.tex", replace  ///
+>    b(3) se(3)  label star(* 0.10 ** 0.05 *** 0.01) ///
+>  booktabs  ///
+>  title("Regression probit to check randomization")   ///
+> addnotes(" ")
+{res}{txt}{p 0 4 2}
+(file {bf}
+./latex/probit_ntrad.tex{rm}
+not found)
+{p_end}
+(output written to {browse  `"./latex/probit_ntrad.tex"'})
+
+{com}. 
+. 
+. 
+. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/riccardodalcero/Desktop/Research/log1.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 7 Oct 2023, 14:30:33
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
