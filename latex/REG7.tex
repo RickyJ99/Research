@@ -1,0 +1,36 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression}
+\begin{tabular}{l*{10}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}&\multicolumn{1}{c}{(9)}&\multicolumn{1}{c}{(10)}\\
+                    &\multicolumn{1}{c}{freq\_card\_8}&\multicolumn{1}{c}{etco\_8}&\multicolumn{1}{c}{freq\_resp\_8}&\multicolumn{1}{c}{alog\_8}&\multicolumn{1}{c}{alog\_MAC\_8}&\multicolumn{1}{c}{vap\_8}&\multicolumn{1}{c}{PAS\_8}&\multicolumn{1}{c}{PAD\_8}&\multicolumn{1}{c}{PAM\_8}&\multicolumn{1}{c}{freq\_card\_8}\\
+\midrule
+Maropitant=0 $\times$ thunderbeat=0&       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         \\
+                    &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         \\
+\addlinespace
+Maropitant=0 $\times$ thunderbeat=1&      -6.740\sym{***}&      -0.452         &       1.656\sym{***}&      -0.681\sym{***}&      -0.089\sym{***}&       0.009         &      -4.666\sym{**} &     -10.810\sym{***}&     -11.015\sym{***}&      -6.740\sym{***}\\
+                    &     (1.876)         &     (0.453)         &     (0.623)         &     (0.089)         &     (0.012)         &     (0.073)         &     (2.081)         &     (1.936)         &     (2.143)         &     (1.876)         \\
+\addlinespace
+Maropitant=1 $\times$ thunderbeat=0&       9.960\sym{***}&      -4.737\sym{***}&       2.032\sym{***}&       0.332\sym{***}&       0.043\sym{***}&       0.378\sym{***}&      15.810\sym{***}&       9.072\sym{***}&       9.673\sym{***}&       9.960\sym{***}\\
+                    &     (1.877)         &     (0.453)         &     (0.624)         &     (0.089)         &     (0.012)         &     (0.073)         &     (2.083)         &     (1.938)         &     (2.145)         &     (1.877)         \\
+\addlinespace
+Maropitant=1 $\times$ thunderbeat=1&       4.506\sym{**} &      -4.344\sym{***}&      -0.393         &      -0.029         &      -0.004         &      -0.506\sym{***}&      13.545\sym{***}&       7.495\sym{***}&       6.306\sym{***}&       4.506\sym{**} \\
+                    &     (1.853)         &     (0.447)         &     (0.616)         &     (0.088)         &     (0.012)         &     (0.072)         &     (2.056)         &     (1.913)         &     (2.117)         &     (1.853)         \\
+\addlinespace
+weight              &      -0.272         &      -0.004         &      -0.168\sym{*}  &      -0.003         &      -0.000         &      -0.003         &      -0.307         &      -0.190         &      -0.024         &      -0.272         \\
+                    &     (0.257)         &     (0.062)         &     (0.085)         &     (0.012)         &     (0.002)         &     (0.010)         &     (0.285)         &     (0.265)         &     (0.293)         &     (0.257)         \\
+\addlinespace
+age                 &       0.081         &      -0.056         &       0.018         &      -0.009         &      -0.001         &       0.014\sym{**} &       0.206         &       0.142         &      -0.049         &       0.081         \\
+                    &     (0.166)         &     (0.040)         &     (0.055)         &     (0.008)         &     (0.001)         &     (0.006)         &     (0.184)         &     (0.171)         &     (0.190)         &     (0.166)         \\
+\addlinespace
+Constant            &      81.691\sym{***}&      44.128\sym{***}&      13.508\sym{***}&       5.624\sym{***}&       0.736\sym{***}&       5.369\sym{***}&     113.296\sym{***}&      76.679\sym{***}&      86.113\sym{***}&      81.691\sym{***}\\
+                    &     (6.132)         &     (1.481)         &     (2.038)         &     (0.292)         &     (0.038)         &     (0.240)         &     (6.804)         &     (6.330)         &     (7.005)         &     (6.132)         \\
+\midrule
+Observations        &          80         &          80         &          80         &          80         &          80         &          80         &          80         &          80         &          80         &          80         \\
+\bottomrule
+\multicolumn{11}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{11}{l}{\footnotesize  }\\
+\multicolumn{11}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

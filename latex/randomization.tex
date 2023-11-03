@@ -4,7 +4,13 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage[export]{adjustbox}
+\usepackage{lscape} 
+\usepackage{rotating}
+\usepackage{tabularx}
+\usepackage[labelfont=bf]{caption} % optional
 
+\usepackage{ragged2e}
+\usepackage{lipsum}% for dummy text
 % Define the \sym command for significance levels
 \newcommand{\sym}[1]{%
   \ifmmode^{#1}\else\(^{#1}\)\fi%
@@ -205,4 +211,18 @@ the randomization procedure has achieved a successful balance of covariates betw
 This harmonious alignment in the plots serves as compelling evidence of the randomization's success, enhancing the
 credibility of our experimental findings. It indicates that any observed effects are likely attributable to the
 treatment rather than confounding variables, reinforcing the robustness of our conclusions. 
+
+\subsection{Regression results}
+\begin{sidewaystable}
+\input{REG.tex}
+\input{REG2.tex}
+\input{REG3.tex}
+\input{REG4.tex}
+\input{REG5.tex}
+\input{REG6.tex}
+\input{REG7.tex}
+\input{REG8.tex}
+\input{REG9.tex}
+\input{REG10.tex}
+\end{sidewaystable}
 \end{document}

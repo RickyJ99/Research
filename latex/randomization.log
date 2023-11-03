@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.5)  7 OCT 2023 15:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.5)  3 NOV 2023 11:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -166,38 +166,113 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \sift@deathcycles=\count273
 \@vwid@loff=\dimen177
 \@vwid@roff=\dimen178
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count274
+\rotFPtop=\skip53
+\rotFPbot=\skip54
+\rot@float@box=\box55
+\rot@mess@toks=\toks24
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen179
+\ar@mcellbox=\box56
+\extrarowheight=\dimen180
+\NC@list=\toks25
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box57
+)
+\TX@col@width=\dimen181
+\TX@old@table=\dimen182
+\TX@old@col=\dimen183
+\TX@target=\dimen184
+\TX@delta=\dimen185
+\TX@cols=\count275
+\TX@ftn=\toks26
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen186
+\captionmargin=\dimen187
+\caption@leftmargin=\dimen188
+\caption@rightmargin=\dimen189
+\caption@width=\dimen190
+\caption@indent=\dimen191
+\caption@parindent=\dimen192
+\caption@hangindent=\dimen193
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count276
+\c@continuedfloat=\count277
+Package caption Info: rotating package is loaded.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/02/25 v3.4 ragged2e Package
+\CenteringLeftskip=\skip57
+\RaggedLeftLeftskip=\skip58
+\RaggedRightLeftskip=\skip59
+\CenteringRightskip=\skip60
+\RaggedLeftRightskip=\skip61
+\RaggedRightRightskip=\skip62
+\CenteringParfillskip=\skip63
+\RaggedLeftParfillskip=\skip64
+\RaggedRightParfillskip=\skip65
+\JustifyingParfillskip=\skip66
+\CenteringParindent=\skip67
+\RaggedLeftParindent=\skip68
+\RaggedRightParindent=\skip69
+\JustifyingParindent=\skip70
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
-\g__graphics_track_int=\count274
-\l__pdf_internal_box=\box55
-\g__pdf_backend_object_int=\count275
-\g__pdf_backend_annotation_int=\count276
-\g__pdf_backend_link_int=\count277
-) (./randomization.aux)
+\g__graphics_track_int=\count278
+\l__pdf_internal_box=\box58
+\g__pdf_backend_object_int=\count279
+\g__pdf_backend_annotation_int=\count280
+\g__pdf_backend_link_int=\count281
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count282
+\l__lipsum_a_int=\count283
+\l__lipsum_b_int=\count284
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./randomization.aux)
 \openout1 = `randomization.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 18.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--37
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
@@ -226,7 +301,7 @@ File: box_plot_peso_trad.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
@@ -252,14 +327,193 @@ File: box_plot_peso_ntrad.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5] [6] [7] (./randomization.aux) ) 
-Here is how much of TeX's memory you used:
- 2947 strings out of 476684
- 50889 string characters out of 5804056
- 1854018 words of memory out of 5000000
- 23167 multiletter control sequences out of 15000+600000
- 516207 words of font info for 53 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 55i,14n,62p,356b,290s stack positions out of 10000i,1000n,20000p,200000b,200000s
+(./REG.tex
 
-Output written on randomization.xdv (7 pages, 65084 bytes).
+./REG.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (5073.57848pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG2.tex
+
+./REG2.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./REG3.tex
+
+./REG3.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (122.86807pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG4.tex
+
+./REG4.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (122.86807pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG5.tex
+
+./REG5.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (58.57806pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG6.tex
+
+./REG6.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (58.57806pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG7.tex
+
+./REG7.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (203.80809pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG8.tex
+
+./REG8.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (193.81808pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG9.tex
+
+./REG9.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (205.48808pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) (./REG10.tex
+
+./REG10.tex:1: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{table}[htbp]
+                       \centering
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (141.19807pt too wide) in paragraph at lines 4--36
+ [][] 
+ []
+
+) [5] [6] [7] [8] (./randomization.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5162 strings out of 476684
+ 95459 string characters out of 5804056
+ 1941018 words of memory out of 5000000
+ 25311 multiletter control sequences out of 15000+600000
+ 516215 words of font info for 54 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 72i,15n,117p,2970b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on randomization.xdv (8 pages, 65776 bytes).

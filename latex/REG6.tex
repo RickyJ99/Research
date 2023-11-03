@@ -1,0 +1,36 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression}
+\begin{tabular}{l*{8}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}\\
+                    &\multicolumn{1}{c}{etco\_7}&\multicolumn{1}{c}{freq\_resp\_7}&\multicolumn{1}{c}{alog\_7}&\multicolumn{1}{c}{alog\_MAC\_7}&\multicolumn{1}{c}{vap\_7}&\multicolumn{1}{c}{PAS\_7}&\multicolumn{1}{c}{PAD\_7}&\multicolumn{1}{c}{PAM\_7}\\
+\midrule
+Maropitant=0 $\times$ thunderbeat=0&       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         &       0.000         \\
+                    &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         &         (.)         \\
+\addlinespace
+Maropitant=0 $\times$ thunderbeat=1&      -0.897\sym{*}  &       1.061\sym{*}  &      -0.208\sym{**} &      -0.027\sym{**} &      -0.224\sym{***}&      -4.217\sym{*}  &      -5.360\sym{**} &      -6.344\sym{***}\\
+                    &     (0.453)         &     (0.562)         &     (0.093)         &     (0.012)         &     (0.078)         &     (2.133)         &     (2.113)         &     (2.169)         \\
+\addlinespace
+Maropitant=1 $\times$ thunderbeat=0&      -5.039\sym{***}&       1.980\sym{***}&       0.649\sym{***}&       0.085\sym{***}&       0.446\sym{***}&      19.750\sym{***}&       9.734\sym{***}&       9.557\sym{***}\\
+                    &     (0.453)         &     (0.563)         &     (0.093)         &     (0.012)         &     (0.078)         &     (2.134)         &     (2.114)         &     (2.171)         \\
+\addlinespace
+Maropitant=1 $\times$ thunderbeat=1&      -4.897\sym{***}&      -0.596         &       0.441\sym{***}&       0.058\sym{***}&       0.232\sym{***}&      17.439\sym{***}&       9.269\sym{***}&       9.306\sym{***}\\
+                    &     (0.447)         &     (0.556)         &     (0.092)         &     (0.012)         &     (0.077)         &     (2.106)         &     (2.087)         &     (2.143)         \\
+\addlinespace
+weight              &       0.053         &      -0.108         &      -0.003         &      -0.000         &      -0.014         &      -0.305         &       0.238         &       0.342         \\
+                    &     (0.062)         &     (0.077)         &     (0.013)         &     (0.002)         &     (0.011)         &     (0.292)         &     (0.289)         &     (0.297)         \\
+\addlinespace
+age                 &      -0.056         &       0.017         &      -0.006         &      -0.001         &      -0.013\sym{*}  &       0.262         &       0.192         &       0.271         \\
+                    &     (0.040)         &     (0.050)         &     (0.008)         &     (0.001)         &     (0.007)         &     (0.189)         &     (0.187)         &     (0.192)         \\
+\addlinespace
+Constant            &      43.981\sym{***}&      11.896\sym{***}&       4.975\sym{***}&       0.651\sym{***}&       5.749\sym{***}&     104.277\sym{***}&      60.038\sym{***}&      66.758\sym{***}\\
+                    &     (1.480)         &     (1.839)         &     (0.304)         &     (0.040)         &     (0.256)         &     (6.972)         &     (6.907)         &     (7.092)         \\
+\midrule
+Observations        &          80         &          80         &          80         &          80         &          80         &          80         &          80         &          80         \\
+\bottomrule
+\multicolumn{9}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{9}{l}{\footnotesize  }\\
+\multicolumn{9}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
