@@ -159,3 +159,7 @@ esttab using "./latex/REG10.tex", replace  ///
  booktabs  ///
  title("Regression")   ///
 addnotes(" ")
+//ranksum v, by(catvar1)
+//ranksum v, by(catvar1) exact
+//ranksum v, by(catvar1) porder
+//median v, by(catvar2)

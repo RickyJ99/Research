@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.5)  3 NOV 2023 11:03
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.5)  4 NOV 2023 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -341,7 +341,7 @@ You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (5073.57848pt too wide) in paragraph at lines 4--36
+Overfull \hbox (7.4079pt too wide) in paragraph at lines 4--36
  [][] 
  []
 
@@ -510,10 +510,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  5162 strings out of 476684
  95459 string characters out of 5804056
- 1941018 words of memory out of 5000000
+ 1871018 words of memory out of 5000000
  25311 multiletter control sequences out of 15000+600000
  516215 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,15n,117p,2970b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,15n,117p,495b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on randomization.xdv (8 pages, 65776 bytes).

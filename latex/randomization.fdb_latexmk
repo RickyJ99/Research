@@ -1,10 +1,10 @@
 # Fdb version 4
 ["xdvipdfmx"] 0 "randomization.xdv" "randomization.pdf" "randomization" 0 -1
-  "randomization.xdv" 1699005798 65776 4f542324fab771ea9b2d1181c24e75b8 "xelatex"
+  "randomization.xdv" 1699084035 65776 aeec3a251531adb5189103cf12db5fff "xelatex"
   (generated)
   "randomization.pdf"
   (rewritten before read)
-["xelatex"] 1699005797 "/Users/riccardodalcero/Library/CloudStorage/OneDrive-UniversitaCattolicaSacroCuore-ICATT/Materials/Research/latex/randomization.tex" "randomization.xdv" "randomization" 1699005798 2
+["xelatex"] 1699084034 "/Users/riccardodalcero/Library/CloudStorage/OneDrive-UniversitaCattolicaSacroCuore-ICATT/Materials/Research/latex/randomization.tex" "randomization.xdv" "randomization" 1699084035 2
   "/Users/riccardodalcero/Library/CloudStorage/OneDrive-UniversitaCattolicaSacroCuore-ICATT/Materials/Research/latex/randomization.tex" 1699005795 10088 986cdf179b272e4dfb3b12e2a7c36485 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -60,16 +60,16 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/xetex/xelatex.fmt" 1678050682 10497565 85a9f0cfa407b075b6ae117c972c4a01 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "REG.tex" 1699005339 36363 73f8145d49a5898ad35ce834c1cd7f5a ""
-  "REG10.tex" 1699005342 4386 039cb0b0750d0bf297bb3e1f85449789 ""
-  "REG2.tex" 1699005339 3605 0f6f528c08983ab6ff3411de5edde0a4 ""
-  "REG3.tex" 1699005340 4377 db7929782bd30eed4b8f6e1776725cc4 ""
-  "REG4.tex" 1699005340 4377 0a71d4293f5a8b5f2033a57f74190702 ""
-  "REG5.tex" 1699005340 3986 4b16ff47eecc3ad5eb50dbc35ebd59ea ""
-  "REG6.tex" 1699005341 3986 356a06aff41b36b42cfc6354be65d057 ""
-  "REG7.tex" 1699005341 4767 89504498d31231199b1b132514f4a54d ""
-  "REG8.tex" 1699005341 4767 df4c84408c45f15238173c9b1e9ee077 ""
-  "REG9.tex" 1699005342 4777 86ab2fa9c84d1139ea3243fb2446b564 ""
+  "REG.tex" 1699084031 3251 2f11d0173285f1962aabdb8867f411f3 ""
+  "REG10.tex" 1699084035 4386 039cb0b0750d0bf297bb3e1f85449789 ""
+  "REG2.tex" 1699084031 3605 0f6f528c08983ab6ff3411de5edde0a4 ""
+  "REG3.tex" 1699084032 4377 db7929782bd30eed4b8f6e1776725cc4 ""
+  "REG4.tex" 1699084032 4377 0a71d4293f5a8b5f2033a57f74190702 ""
+  "REG5.tex" 1699084033 3986 4b16ff47eecc3ad5eb50dbc35ebd59ea ""
+  "REG6.tex" 1699084033 3986 356a06aff41b36b42cfc6354be65d057 ""
+  "REG7.tex" 1699084033 4767 89504498d31231199b1b132514f4a54d ""
+  "REG8.tex" 1699084034 4767 df4c84408c45f15238173c9b1e9ee077 ""
+  "REG9.tex" 1699084034 4777 86ab2fa9c84d1139ea3243fb2446b564 ""
   "box_plot_eta_ntrad.png" 1696684455 72324 ee1b017d8f7147c39f1b394dcd3c187a ""
   "box_plot_eta_trad.png" 1696684532 72545 7027a279152210993780d5d2e1cfbb6d ""
   "box_plot_peso_ntrad.png" 1696684459 78473 0733d7fc9c45510ec1e00eef7ae6e726 ""
@@ -78,7 +78,7 @@
   "histogram_eta_trad.png" 1696684530 85801 888c1ff1964abef5670da16268eb5dcd ""
   "histogram_peso_ntrad.png" 1696684458 89124 e5f7e389239cfd3f1ba3b6c6db05eaa0 ""
   "histogram_peso_trad.png" 1696684534 88851 a49356e5d194ab958ae797c9698b32a2 ""
-  "randomization.aux" 1699005798 2378 8434ba93c2c06e4b4d2e95603bb50328 "xelatex"
+  "randomization.aux" 1699084035 2378 8434ba93c2c06e4b4d2e95603bb50328 "xelatex"
   "randomization.tex" 1699005795 10088 986cdf179b272e4dfb3b12e2a7c36485 ""
   (generated)
   "randomization.aux"
